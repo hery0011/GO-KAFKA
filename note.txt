@@ -1,0 +1,18 @@
+telechargena le kafka de apetraka am dossier izay ametrahana azy
+mila lancena aloha ny :
+    *miditra ao am dossier kafka:
+        zookeper ./bin/zookeeper-server-start.sh config/zookeeper.properties
+        broker ./bin/kafka-server-start.sh config/server.properties
+    *miditra dossier produceur sy consumer:    
+        go run main.go
+
+
+==============================
+        voici le commande pour trouver le chemin vers le kafka-topics.sh
+            *which kafka-topics.sh
+        
+        voici le commande pour céer un topic
+            */var/www/dev/kurve/cloud/KAFKA-GOLANG/kafka_2.12-3.2.3/bin/kafka-topics.sh --create --topic my-topic --partitions 1 --replication-factor 1 --bootstrap-server localhost:9092
+
+        voici le commande pour voir le liste de tous le topic
+            */var/www/dev/kurve/cloud/KAFKA-GOLANG/kafka_2.12-3.2.3/bin/kafka-topics.sh --list 1 --bootstrap-server localhost:9092
